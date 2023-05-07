@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store 1.0</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/script_1.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Store 1.0</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Products</h2>
+            <span>Products list in my Store</span>
+        </div>
+
+        <div class="card">
+            <label for="">Product</label>
+            <input type="text" name="product" id="product" placeholder="Product name">
+            <label for="">Price</label>
+            <input type="text" name="price" id="price" placeholder="Only numbers">
+            <div class="btn-card">
+                <button onclick="product.save()">Save</button>
+                <button onclick="product.cancel()">Cancel</button>
+            </div>   
+        </div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th id="th-id">ID</th>
+                    <th id="th-product">Product</th>
+                    <th id="th-price">Price</th>
+                    <th id="th-action">Actions</th>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td>10</td>
+                        <td class="description">Table</td>
+                        <td>R$ 23.500</td>
+                        <td><img src="img/edit.svg" alt="Edit"><img src="img/delete.svg" alt="Delete"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
