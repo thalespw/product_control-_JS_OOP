@@ -24,9 +24,9 @@
             <label for="">Product</label>
             <input type="text" name="product" id="product" placeholder="Product name">
             <label for="">Price</label>
-            <input type="text" name="price" id="price" placeholder="Only numbers">
+            <input type="number" name="price" id="price" placeholder="Only numbers">
             <div class="btn-card">
-                <button onclick="product.save()">Save</button>
+                <button onclick="product.save()" id="btn1">Save</button>
                 <button onclick="product.cancel()">Cancel</button>
             </div>   
         </div>
@@ -39,12 +39,12 @@
                     <th id="th-action">Actions</th>
                 </thead>
                 <tbody id="tbody">
-                    <tr>
+                    <!-- <tr>
                         <td>10</td>
                         <td class="description">Table</td>
                         <td>R$ 23.500</td>
                         <td><img src="img/edit.svg" alt="Edit"><img src="img/delete.svg" alt="Delete"></td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
