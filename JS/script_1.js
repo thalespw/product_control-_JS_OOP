@@ -41,11 +41,11 @@ class Product {
             td_product.classList.add('description')
 
             let imgEdit = document.createElement('img')
-            imgEdit.src = '/img/edit.svg'
+            imgEdit.src = '../edit.svg'
             imgEdit.setAttribute("onclick","product.prepareEdition("+ JSON.stringify(this.productsArray[i]) + ")")
 
             let imgDelete = document.createElement('img')
-            imgDelete.src = '/img/delete.svg'
+            imgDelete.src = '../delete.svg'
             imgDelete.setAttribute("onclick","product.delete("+ this.productsArray[i].id +")")
 
             td_action.appendChild(imgEdit)
